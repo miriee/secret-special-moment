@@ -1,0 +1,47 @@
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/journal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1%;
+}
+
+.body-journal {
+  max-width: 450px;
+  margin: auto;
+  height: 300px;
+  background-color: rgba(233, 229, 230, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.list-souvenirs {
+  max-width: 90%;
+  margin-block: 4%;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(45, 173, 172, 0.4);
+  color: black;
+}
+
+.card-moment {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(130,58,104,0.8);
+  margin: 2%;
+}
+.row{
+  justify-content: center;
+}
