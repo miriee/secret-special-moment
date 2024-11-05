@@ -11,12 +11,18 @@ export const ListeMoment = () => {
         setSouvenirs(sortedListe);
     }, []);
 
+    const handleDelete = (id) => {
+        const updatedSouvenirs = souvenirs.filter((_, index) => index !== id);
+        setSouvenirs(updatedSouvenirs);
+        localStorage.setItem("liste", JSON.stringify(updatedSouvenirs));
+    };
+
     return (
         <Row>
             <h4>Liste des Souvenirs</h4>
-            {souvenirs ?
+            {souvenirs.length !== 0 ?
                 souvenirs.map((souvenir, id) =>
-                    <CardMoment key={id} souvenir={souvenir} />
+                    <CardMoment key={id} souvenir={souvenir} onDelete={() => handleDelete(id)}/>
                 ) :
                 <p>Liste Vide</p>
             }

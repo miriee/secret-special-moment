@@ -39,9 +39,27 @@ h1 {
 .card-moment {
   padding: 20px;
   border-radius: 8px;
-  background-color: rgba(130,58,104,0.8);
+  background-color: rgba(130, 58, 104, 0.8);
   margin: 2%;
 }
-.row{
+
+.row {
   justify-content: center;
+}
+
+.delete-btn,
+.modif-btn {
+  background-color: rgba(48, 184, 180, 0.5);
+  border: none;
+  padding-bottom: 5px;
+  padding-inline: 8px;
+  border-radius: 9px;
+}
+
+.delete-btn {
+  color: rgb(149 12 12);
+}
+
+.modif-btn {
+  color: rgb(3, 90, 57);
 }
