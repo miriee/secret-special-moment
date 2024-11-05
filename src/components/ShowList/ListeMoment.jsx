@@ -16,13 +16,27 @@ export const ListeMoment = () => {
         setSouvenirs(updatedSouvenirs);
         localStorage.setItem("liste", JSON.stringify(updatedSouvenirs));
     };
+    
+    const handleSave = (id, updatedNote) => {
+        const updatedSouvenirs = souvenirs.map((souvenir, index) =>
+            index === id ? { ...souvenir, note: updatedNote } : souvenir
+        );
+        setSouvenirs(updatedSouvenirs);
+        localStorage.setItem("liste", JSON.stringify(updatedSouvenirs));
+    };
 
     return (
         <Row>
             <h4>Liste des Souvenirs</h4>
             {souvenirs.length !== 0 ?
                 souvenirs.map((souvenir, id) =>
-                    <CardMoment key={id} souvenir={souvenir} onDelete={() => handleDelete(id)}/>
+                    <CardMoment
+                        key={id}
+                        souvenir={souvenir}
+                        onDelete={() => handleDelete(id)}
+                        onSave={(updatedNote) => handleSave(id, updatedNote)}
+
+                    />
                 ) :
                 <p>Liste Vide</p>
             }

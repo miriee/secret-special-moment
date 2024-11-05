@@ -39,7 +39,6 @@ export const SpecialMoment = () => {
             </FloatingLabel>
             <button
                 style={{ backgroundColor: '#833b69', border: "none", marginTop: "3%", borderRadius: "3px", paddingBlock: '2%', paddingInline: '4%', color: "#30b8b4", fontWeight: "bold" }}
-                // onClick={handleAdd}
             >
                 Ajouter
             </button>
