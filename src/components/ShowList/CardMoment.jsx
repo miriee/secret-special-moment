@@ -46,7 +46,7 @@ export const CardMoment = (props) => {
                     <Modal.Title>Modifier ce souvenir</Modal.Title>
                 </Modal.Header>
                 <Form className="p-3">
-                    <FloatingLabel controlId="floatingTextarea2" label="Écrivez un moment spécial...">
+                    <FloatingLabel controlId="floatingTextarea2">
                         <Form.Control
                             as="textarea"
                             placeholder="Leave a comment here"
