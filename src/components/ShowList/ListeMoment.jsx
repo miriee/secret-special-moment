@@ -14,7 +14,7 @@ export const ListeMoment = () => {
     return (
         <Row>
             <h4>Liste des Souvenirs</h4>
-            {souvenirs.length !== 0 ?
+            {souvenirs ?
                 souvenirs.map((souvenir, id) =>
                     <CardMoment key={id} souvenir={souvenir} />
                 ) :
