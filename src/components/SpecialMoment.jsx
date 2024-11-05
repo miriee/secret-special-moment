@@ -6,7 +6,7 @@ export const SpecialMoment = () => {
     const [souvenirs, setSouvenirs] = useState(JSON.parse(localStorage.getItem("liste")) || [])
 
     const handleChange = ({ target }) => {
-        setSouvenir({ note: target.value, date: new Date().toLocaleDateString() })
+        setSouvenir({ note: target.value, date: new Date() })
     }
 
     const handleAdd = (event) => {
