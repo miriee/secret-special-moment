@@ -3,7 +3,7 @@ import { CardMoment } from "./CardMoment"
 import { Row } from "react-bootstrap"
 
 export const ListeMoment = () => {
-    const [souvenirs, setSouvenirs] = useState(JSON.parse(localStorage.getItem("liste")))
+    const [souvenirs, setSouvenirs] = useState(JSON.parse(localStorage.getItem("liste")) || [])
 
     return (
         <Row>
